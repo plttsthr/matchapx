@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPaneStore" prefHeight="545.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matchapxstore.controllers.SettingsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2efd7" height="119.0" layoutX="3.0" layoutY="5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="675.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f2e5" height="184.0" layoutX="3.0" layoutY="119.0" stroke="#c8cc9500" strokeType="INSIDE" strokeWidth="5.0" width="675.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2efd7" height="237.0" layoutX="4.0" layoutY="303.0" stroke="TRANSPARENT" strokeType="INSIDE" width="675.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8cc95" height="31.0" layoutX="3.0" layoutY="293.0" stroke="TRANSPARENT" strokeType="INSIDE" width="675.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8cc95" height="31.0" layoutX="3.0" layoutY="94.0" stroke="TRANSPARENT" strokeType="INSIDE" width="675.0" />
+      <RadioButton fx:id="RB5" layoutX="50.0" layoutY="136.0" mnemonicParsing="false" onAction="#AddCredit" style="-fx-background-radius: 40;" text="\$5" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RB10" layoutX="50.0" layoutY="192.0" mnemonicParsing="false" onAction="#AddCredit" text="\$10" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RB20" layoutX="200.0" layoutY="136.0" mnemonicParsing="false" onAction="#AddCredit" text="\$20" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RB50" layoutX="200.0" layoutY="192.0" mnemonicParsing="false" onAction="#AddCredit" text="\$50" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <Text fill="#758000" layoutX="38.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Money to my Balance">
+         <font>
+            <Font name="rainyhearts" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#758000" layoutX="34.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change my Password">
+         <font>
+            <Font name="rainyhearts" size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="ButtonChangePassword" layoutX="482.0" layoutY="422.0" mnemonicParsing="false" onAction="#ChangePassword" prefHeight="31.0" prefWidth="122.0" text="Change Password" textFill="#758000">
+         <font>
+            <Font name="Pixellari" size="13.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="RB250" layoutX="340.0" layoutY="136.0" mnemonicParsing="false" onAction="#AddCredit" text="\$250" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RB500" layoutX="340.0" layoutY="192.0" mnemonicParsing="false" onAction="#AddCredit" text="\$500" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RB15" layoutX="50.0" layoutY="250.0" mnemonicParsing="false" onAction="#AddCredit" text="\$15" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RB100" layoutX="200.0" layoutY="250.0" mnemonicParsing="false" onAction="#AddCredit" text="\$100" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RB1000" layoutX="340.0" layoutY="250.0" mnemonicParsing="false" onAction="#AddCredit" text="\$1000" textFill="#758000">
+         <font>
+            <Font name="rainyhearts" size="16.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="ButtonGetBalance" layoutX="482.0" layoutY="49.0" mnemonicParsing="false" onAction="#GetBalance" prefHeight="31.0" prefWidth="122.0" text="GetBalance" textFill="#758000">
+         <font>
+            <Font name="Pixellari" size="13.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8cc95" height="31.0" layoutX="3.0" stroke="TRANSPARENT" strokeType="INSIDE" width="675.0" />
+      <Text fill="#758000" layoutX="43.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Balance">
+         <font>
+            <Font name="rainyhearts" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="LabelMyBalance" layoutX="91.0" layoutY="53.0" prefHeight="18.0" prefWidth="145.0" text="  " textAlignment="CENTER" textFill="#758000">
+         <font>
+            <Font name="Pixellari" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="52.0" prefHeight="29.0" prefWidth="30.0" text="\$" textAlignment="CENTER" textFill="#758000">
+         <font>
+            <Font name="Pixellari" size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="ChangeCurrentPassword" layoutX="74.0" layoutY="367.0" prefHeight="31.0" prefWidth="312.0" promptText="Current Password">
+         <font>
+            <Font name="Pixellari" size="13.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="NewPassword" layoutX="74.0" layoutY="422.0" prefHeight="31.0" prefWidth="312.0" promptText="New Password">
+         <font>
+            <Font name="Pixellari" size="13.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="ConfirmNewPassword" layoutX="74.0" layoutY="477.0" prefHeight="31.0" prefWidth="312.0" promptText="Confirm New Password">
+         <font>
+            <Font name="Pixellari" size="13.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+  
+.button:hover{
+    
+    -fx-border-color: #60700c;
+    -fx-border-width: 0px 0px 3px 0px;
+    
+}
+
+.menuItem{
+    -fx-background-color: #e8ebe2;
+    -fx-stroke:  #eae7be;
+}  
+
+.menuItem:hover{
+    
+    -fx-background-color:  #d4d6ba;
+}
+
+.button_buy{
+    -fx-background-color: #758000;
+    
+ 
+}
+
+.button_buy:hover{
+    -fx-background-color: #f6f7e4;
+    -fx-text-fill: #60700c;
+    -fx-stroke:  #a9ab8c;
+    
+    
+}
+
+.text-field{
+    -fx-border-color: transparent;
+   
+}
+
+.text-field:focused{
+    
+    -fx-faint-focus-color: transparent;
+    -fx-border-width: -1;
+}
+
+    
+    
